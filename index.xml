@@ -18,23 +18,13 @@ Simple Tasks I made this program just for Linux (my daily driver) because I need
     </item>
     
     <item>
-      <title>SKILLS</title>
-      <link>https://0xfederama.github.io/skills/</link>
-      <pubDate>Tue, 22 Sep 2020 18:33:22 +0200</pubDate>
-      
-      <guid>https://0xfederama.github.io/skills/</guid>
-      <description>Programming Languages  C (learned in University) Java (learned in University) Go (self-taught) SQL (learned in University)  Languages  Italian English  </description>
-    </item>
-    
-    <item>
       <title>About</title>
-      <link>https://0xfederama.github.io/resume/</link>
+      <link>https://0xfederama.github.io/about/</link>
       <pubDate>Tue, 22 Sep 2020 11:55:54 +0200</pubDate>
       
-      <guid>https://0xfederama.github.io/resume/</guid>
+      <guid>https://0xfederama.github.io/about/</guid>
       <description>I am Federico Ramacciotti, Computer Science student at the University of Pisa and programmer.
-I&amp;rsquo;ve made two little projects by myself, Water Reminder and Simple Tasks, written in Go, a language that I learned by myself. Moreover, I made other projects for my Univerity, written in C, Java and a smaller one in OCaml. I&amp;rsquo;m still quite unexperienced but always ready to work and learn new things.
-My interests are imperative and object-oriented languages, in fact I want to learn much more about Go and Python, Unix and Operating Systems in general and the backend side of the applications.</description>
+I&amp;rsquo;ve made two little projects by myself, Water Reminder and Simple Tasks, written in Go, a language that I learned by myself. Moreover, I made other projects for my Univerity, written in C, Java and a smaller one in OCaml. I&amp;rsquo;m still quite unexperienced but always ready to work and learn new things. In University I also learned a little bit of SQL.</description>
     </item>
     
   </channel>
