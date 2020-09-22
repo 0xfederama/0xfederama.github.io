@@ -27,12 +27,14 @@ Simple Tasks I made this program just for Linux (my daily driver) because I need
     </item>
     
     <item>
-      <title>RESUME</title>
+      <title>About</title>
       <link>https://0xfederama.github.io/resume/</link>
       <pubDate>Tue, 22 Sep 2020 11:55:54 +0200</pubDate>
       
       <guid>https://0xfederama.github.io/resume/</guid>
-      <description>  </description>
+      <description>I am Federico Ramacciotti, Computer Science student at the University of Pisa and programmer.
+I&amp;rsquo;ve made two little projects by myself, Water Reminder and Simple Tasks, written in Go, a language that I learned by myself. Moreover, I made other projects for my Univerity, written in C, Java and a smaller one in OCaml. I&amp;rsquo;m still quite unexperienced but always ready to work and learn new things.
+My interests are imperative and object-oriented languages, in fact I want to learn much more about Go and Python, Unix and Operating Systems in general and the backend side of the applications.</description>
     </item>
     
   </channel>
