@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Federico Ramacciotti</title>
+    <link>https://0xfederama.github.io/</link>
+    <description>Recent content on Federico Ramacciotti</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://0xfederama.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PROJECTS</title>
+      <link>https://0xfederama.github.io/projects/</link>
+      <pubDate>Tue, 22 Sep 2020 18:36:25 +0200</pubDate>
+      
+      <guid>https://0xfederama.github.io/projects/</guid>
+      <description>Water Reminder This is the first program I made. It&amp;rsquo;s written entirely in Go and available for Linux and macOS. With this project I learned how to create and package a program, use libraries, and a new language. It is a top bar app that reminds you to drink every 15/30/45/60 minutes through notifications.
+Simple Tasks I made this program just for Linux (my daily driver) because I needed it during the Covid pandemic when we all had to so several meeting/lessons online.</description>
+    </item>
+    
+    <item>
+      <title>SKILLS</title>
+      <link>https://0xfederama.github.io/skills/</link>
+      <pubDate>Tue, 22 Sep 2020 18:33:22 +0200</pubDate>
+      
+      <guid>https://0xfederama.github.io/skills/</guid>
+      <description>Programming Languages  C (learned in University) Java (learned in University) Go (self-taught) SQL (learned in University)  Languages  Italian English  </description>
+    </item>
+    
+    <item>
+      <title>RESUME</title>
+      <link>https://0xfederama.github.io/resume/</link>
+      <pubDate>Tue, 22 Sep 2020 11:55:54 +0200</pubDate>
+      
+      <guid>https://0xfederama.github.io/resume/</guid>
+      <description>  </description>
+    </item>
+    
+  </channel>
+</rss>
