@@ -1,0 +1,44 @@
+{
+    "list": [
+        {
+            "name": "Wi-Feye",
+            "url": "https://github.com/wi-feye",
+            "desc": "Python, Flask, Docker, APIs, microservices, databases - Crowd behavior analysis service using Wi-Fi probe requests."
+        },
+        {
+            "name": "My Message in a Bottle",
+            "url": "https://github.com/ASE-2021-Squad8",
+            "desc": "Python, Flask, Docker, APIs, microservices, databases - Microservices-based messaging service."
+        },
+        {
+            "name": "Synchronized queue",
+            "url": "https://github.com/0xfederama/synchronized-queue",
+            "desc": "C - Thread synchonized queue made for PThreads."
+        },
+        {
+            "name": "Water Reminder",
+            "url": "https://github.com/0xfederama/water-reminder",
+            "desc": "Go - Taskbar and notifications app that reminds you to drink."
+        },
+        {
+            "name": "mindot",
+            "url": "https://github.com/0xfederama/mindot",
+            "desc": "Rust - Simple and minimal dotfiles manager."
+        },
+        {
+            "name": "microc-compiler",
+            "url": "https://github.com/0xfederama/microc-compiler",
+            "desc": "Ocaml, ocamllex, menhir, LLVM - Compiler for a monkey-c language."
+        },
+        {
+            "name": "bitcoin-simulation-libp2p",
+            "url": "https://github.com/0xfederama/bitcoin-simulation-libp2p",
+            "desc": "Go, libp2p - Bitcoin-like protocol simulation using Go and Libp2p."
+        },
+        {
+            "name": "Stopwatches",
+            "url": "https://github.com/0xfederama/stopwatches",
+            "desc": "SwiftUI - Simple multiple stopwatches app."
+        }
+    ]
+}
