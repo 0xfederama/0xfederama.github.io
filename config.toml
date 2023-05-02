@@ -39,6 +39,8 @@ weight = 4
   
   I love to learn new technologies and build small tools to practice with them.
   Over the years I built a lot of small tools to learn the programming languages I know, and you can find them all on my [github profile](https://github.com/0xfederama).
+
+  Subscribe to my [RSS feed](/posts/index.ml) to get updates on new posts!
   """
   mainSection = "posts" # your main section
   tocInline = true
@@ -62,7 +64,7 @@ weight = 4
     link = "https://github.com/0xfederama"
   [[params.social]]
     name = "linkedin"
-    link = "https://www.linkedin.com/in/federico-ramacciotti/"
+    link = "https://www.linkedin.com/in/federico-ramacciotti"
   [[params.social]]
     name = "twitter"
     link = "https://twitter.com/vgfede"
