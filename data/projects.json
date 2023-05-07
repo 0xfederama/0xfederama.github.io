@@ -3,42 +3,47 @@
         {
             "name": "Wi-Feye",
             "url": "https://github.com/wi-feye",
-            "desc": "Python, Flask, Docker, APIs, microservices, databases - Crowd behavior analysis service using Wi-Fi probe requests."
+            "desc": "crowd behavior analysis service using Wi-Fi probe requests - python, flask, docker, api, microservices, databases"
         },
         {
             "name": "My Message in a Bottle",
             "url": "https://github.com/ASE-2021-Squad8",
-            "desc": "Python, Flask, Docker, APIs, microservices, databases - Microservices-based messaging service."
+            "desc": "microservices-based messaging service - python, flask, docker, api, microservices, databases"
         },
         {
             "name": "Synchronized queue",
             "url": "https://github.com/0xfederama/synchronized-queue",
-            "desc": "C - Thread synchonized queue made for PThreads."
+            "desc": "thread synchonized queue made for PThreads - c"
         },
         {
             "name": "Water Reminder",
             "url": "https://github.com/0xfederama/water-reminder",
-            "desc": "Go - Taskbar and notifications app that reminds you to drink."
+            "desc": "taskbar and notifications app that reminds you to drink. - Go"
         },
         {
-            "name": "mindot",
+            "name": "Mindot",
             "url": "https://github.com/0xfederama/mindot",
-            "desc": "Rust - Simple and minimal dotfiles manager."
+            "desc": "simple and minimal dotfiles manager - rust"
         },
         {
-            "name": "microc-compiler",
+            "name": "MicroC Compiler",
             "url": "https://github.com/0xfederama/microc-compiler",
-            "desc": "Ocaml, ocamllex, menhir, LLVM - Compiler for a monkey-c language."
+            "desc": "compiler for a monkey-c language - ocaml, ocamllex, menhir, llvm"
         },
         {
-            "name": "bitcoin-simulation-libp2p",
+            "name": "Bitcoin Simulation libp2p",
             "url": "https://github.com/0xfederama/bitcoin-simulation-libp2p",
-            "desc": "Go, libp2p - Bitcoin-like protocol simulation using Go and Libp2p."
+            "desc": "bitcoin-like protocol simulation using Go and Libp2p - go, libp2p"
+        },
+        {
+            "name": "Parallel Jacobi method",
+            "url": "https://github.com/0xfederama/university/tree/main/master/parallel-programming-2022",
+            "desc": "parallelization of the Jacobi method for matrix resolution using standard threads and fastflow - c++"
         },
         {
             "name": "Stopwatches",
             "url": "https://github.com/0xfederama/stopwatches",
-            "desc": "SwiftUI - Simple multiple stopwatches app."
+            "desc": "simple multiple stopwatches app - swiftui"
         }
     ]
 }
