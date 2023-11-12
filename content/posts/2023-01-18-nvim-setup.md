@@ -1,8 +1,7 @@
 ---
 title: Learning and configuring nvim
 date: 2023-01-18
-tags:
-    - (n)vim
+tags: ['nvim']
 thumbnail: "vim-nvim.jpg"
 ---
 
@@ -10,7 +9,7 @@ In my first blog post I want to document my journey learning vim and nvim.
 
 ![nvim-nvim](/vim-nvim.jpg "{width='50%'}")
 
-Because of its steep learning curve, I have never really considered it. But after watching [The Primeagen](https://twitter.com/ThePrimeagen) flying through the terminal with nvim, I decided to give it a try. I followed some of his videos to learn about vim motions and [this video](tab:https://www.youtube.com/watch?v=w7i4amO_zaE) to learn how to configure nvim.  
+Because of its steep learning curve, I have never really considered it. But after watching [The Primeagen](https://twitter.com/ThePrimeagen) flying through the terminal with nvim, I decided to give it a try. I followed some of his videos to learn about vim motions and [this video](tab:https://www.youtube.com/watch?v=w7i4amO_zaE) to learn how to configure nvim.
 
 ## First attempt
 
@@ -36,7 +35,7 @@ The smartest way to setup nvim and make it really useful for me (and easy to use
 
 ## Final setup
 
-My final setup is a little bit of both worlds: simple, but tuned with useful plugins and remaps. You can find it on my GitHub in this [repository](https://github.com/0xfederama/dotfiles/tree/main/.config/nvim), that I will keep updated with new plugins and settings. 
+My final setup is a little bit of both worlds: simple, but tuned with useful plugins and remaps. You can find it on my GitHub in this [repository](https://github.com/0xfederama/dotfiles/tree/main/.config/nvim), that I will keep updated with new plugins and settings.
 Below there's a list of all the plugins I wanted at the start of my setup (i.e. the first commit on the repo):
 - [vim-be-good](https://github.com/ThePrimeagen/vim-be-good)
 - [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)

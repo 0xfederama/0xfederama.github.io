@@ -26,9 +26,9 @@
             "desc": "simple and minimal dotfiles manager - rust"
         },
         {
-            "name": "MicroC Compiler",
-            "url": "https://github.com/0xfederama/microc-compiler",
-            "desc": "compiler for a monkey-c language - ocaml, ocamllex, menhir, llvm"
+            "name": "LQCCS Interpreter",
+            "url": "https://github.com/Lab-Innovative-Software-Quantum/lqccs-interpreter",
+            "desc": "interpreter for linear quantum ccs - ocaml, ocamllex, menhir"
         },
         {
             "name": "Bitcoin Simulation libp2p",
