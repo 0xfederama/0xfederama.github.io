@@ -6,3 +6,6 @@ Deployed using [Hugo](https://github.com/gohugoio/hugo) and a modified [hugo-cac
 
 ## Local test
 Clone the repository with `git clone --recursive https://github.com/0xfederama/0xfederama.github.io.git` and run the server locally with `hugo server`.
+
+## Deployment
+Deploy the website with `hugo `.

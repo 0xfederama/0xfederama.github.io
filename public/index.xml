@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Federico Ramacciotti</title>
+    <link>http://federama.dev/</link>
+    <description>Recent content on Federico Ramacciotti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://federama.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My dev setup using VSCode and nvim</title>
+      <link>http://federama.dev/posts/2023-11-11-new-dev-setup/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://federama.dev/posts/2023-11-11-new-dev-setup/</guid>
+      <description>&lt;p&gt;Back in January I made a &lt;a href=&#34;http://federama.dev/posts/2023-01-18-nvim-setup/&#34;&gt;post&lt;/a&gt; on how I was learning and configuring vim and neovim. After 10 months, during which I focused on University and didn&amp;rsquo;t write code 24/7, I found myself more and more going back to VSCode. So I decided to fine-tune VSCode to my likings, and simplify nvim to use it when I need to modify some files from the terminal.&lt;/p&gt;&#xA;&lt;p&gt;In the last few months, I realized that in my 4 years of using VSCode I never customized it (aside changing theme) and I filled it with a lot of bloat. In this post I&amp;rsquo;m going to explain how I simplified and tuned both VSCode and nvim.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learning and configuring nvim</title>
+      <link>http://federama.dev/posts/2023-01-18-nvim-setup/</link>
+      <pubDate>Wed, 18 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://federama.dev/posts/2023-01-18-nvim-setup/</guid>
+      <description>&lt;p&gt;In my first blog post I want to document my journey learning vim and nvim.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://federama.dev/vim-nvim.jpg&#34; alt=&#34;nvim-nvim&#34; title=&#34;{width=&#39;50%&#39;}&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Because of its steep learning curve, I have never really considered it. But after watching &lt;a href=&#34;https://twitter.com/ThePrimeagen&#34;&gt;The Primeagen&lt;/a&gt; flying through the terminal with nvim, I decided to give it a try. I followed some of his videos to learn about vim motions and &lt;a href=&#34;tab:https://www.youtube.com/watch?v=w7i4amO_zaE&#34;&gt;this video&lt;/a&gt; to learn how to configure nvim.&lt;/p&gt;&#xA;&lt;h2 id=&#34;first-attempt&#34;&gt;First attempt&lt;/h2&gt;&#xA;&lt;p&gt;This journey started on my 23rd birthday, seeing a vim motions video explaining how vim works. Then, I started browsing some of the files with vim on my computer to see if the various commands where as difficult as it seemed from the outside. Sure enough, I found the vim concept quite clever and useful: having two modes, one for inserting and one for commands and browsing, is in fact quite useful.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>http://federama.dev/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://federama.dev/about/</guid>
+      <description>&lt;p&gt;Who am I?&lt;/p&gt;&#xA;&lt;h2 id=&#34;technologies&#34;&gt;Technologies&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Proficient in Python (&lt;a href=&#34;https://github.com/wi-feye/wi-feye&#34;&gt;Wi-Feye&lt;/a&gt;, &lt;a href=&#34;https://github.com/ASE-2021-Squad8/MMIAB-microservices-based&#34;&gt;My Message in a Bottle&lt;/a&gt;, &lt;a href=&#34;https://github.com/0xfederama/university/tree/main/bachelor/network-management-2021&#34;&gt;Time series networking project&lt;/a&gt;), Go (&lt;a href=&#34;https://github.com/0xfederama/water-reminder&#34;&gt;Water Reminder&lt;/a&gt;, &lt;a href=&#34;https://github.com/0xfederama/bitcoin-simulation-libp2p&#34;&gt;Bitcoin simulation&lt;/a&gt; with libp2p, &lt;a href=&#34;https://github.com/0xfederama/simple-tasks&#34;&gt;Simple Tasks&lt;/a&gt;), C/C++ (&lt;a href=&#34;https://github.com/0xfederama/university/tree/main/master/parallel-programming-2022&#34;&gt;Parallel Jacobi method&lt;/a&gt;, &lt;a href=&#34;https://github.com/0xfederama/synchronized-queue&#34;&gt;Synchronized queue&lt;/a&gt;) and OCaml (&lt;a href=&#34;https://github.com/Lab-Innovative-Software-Quantum/lqccs-interpreter&#34;&gt;lqccs-interpreter&lt;/a&gt; with ocaml, ocamllex and menhir).&lt;/li&gt;&#xA;&lt;li&gt;Able to write Rust (&lt;a href=&#34;https://github.com/0xfederama/mindot/&#34;&gt;mindot&lt;/a&gt; dotfiles manager), Java, Swift/SwiftUI (&lt;a href=&#34;https://github.com/0xfederama/stopwatches&#34;&gt;Stopwatches&lt;/a&gt;) and MATLAB.&lt;/li&gt;&#xA;&lt;li&gt;Capable of writing Docker files that connect multiple containers.&lt;/li&gt;&#xA;&lt;li&gt;Deep knowledge of programming languages, compilers, formal methods and an introduction to quantum computing.&lt;/li&gt;&#xA;&lt;li&gt;Able of designing and writing complex multi-threaded programs in C++, C, Go and Java.&lt;/li&gt;&#xA;&lt;li&gt;Proficient in Git and Unix systems (used Linux for 3 years, from 2021 on Apple Silicon).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;soft-skills&#34;&gt;Soft skills&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hard worker and curious learner with a great attention to detail.&lt;/li&gt;&#xA;&lt;li&gt;Love for learning new tools or technologies.&lt;/li&gt;&#xA;&lt;li&gt;Capable of working in teams with Agile practices.&lt;/li&gt;&#xA;&lt;li&gt;Mather tongue in Italian, fluent in English&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;interests&#34;&gt;Interests&lt;/h2&gt;&#xA;&lt;p&gt;Aside from coding related interests, I really like travelling and doing sports, learning new things and playing video games.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

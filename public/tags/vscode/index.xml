@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vscode on Federico Ramacciotti</title>
+    <link>http://federama.dev/tags/vscode/</link>
+    <description>Recent content in Vscode on Federico Ramacciotti</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://federama.dev/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My dev setup using VSCode and nvim</title>
+      <link>http://federama.dev/posts/2023-11-11-new-dev-setup/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://federama.dev/posts/2023-11-11-new-dev-setup/</guid>
+      <description>&lt;p&gt;Back in January I made a &lt;a href=&#34;http://federama.dev/posts/2023-01-18-nvim-setup/&#34;&gt;post&lt;/a&gt; on how I was learning and configuring vim and neovim. After 10 months, during which I focused on University and didn&amp;rsquo;t write code 24/7, I found myself more and more going back to VSCode. So I decided to fine-tune VSCode to my likings, and simplify nvim to use it when I need to modify some files from the terminal.&lt;/p&gt;&#xA;&lt;p&gt;In the last few months, I realized that in my 4 years of using VSCode I never customized it (aside changing theme) and I filled it with a lot of bloat. In this post I&amp;rsquo;m going to explain how I simplified and tuned both VSCode and nvim.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

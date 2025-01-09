@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> My dev setup using VSCode and nvim | Federico Ramacciotti</title>
+  <link rel = 'canonical' href = 'http://federama.dev/posts/2023-11-11-new-dev-setup/'>
+  <meta name="description" content="  Hey 👋, I&#39;m Federico Ramacciotti, a 25-year-old software engineer.
+  I got a Master&#39;s Degree in 2024 in Computer Science at the University of Pisa and I’m currently looking for a job.
+
+  I love to learn new technologies and I believe in learning-by-doing, so I built a lot of small tools to practice with the languages; you can find them all on my [github profile](https://github.com/0xfederama).
+
+  Subscribe to my [RSS feed](/posts/index.ml) to get updates on new posts!
+  ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:url" content="http://federama.dev/posts/2023-11-11-new-dev-setup/">
+  <meta property="og:site_name" content="Federico Ramacciotti">
+  <meta property="og:title" content="My dev setup using VSCode and nvim">
+  <meta property="og:description" content="Back in January I made a post on how I was learning and configuring vim and neovim. After 10 months, during which I focused on University and didn’t write code 24/7, I found myself more and more going back to VSCode. So I decided to fine-tune VSCode to my likings, and simplify nvim to use it when I need to modify some files from the terminal.
+In the last few months, I realized that in my 4 years of using VSCode I never customized it (aside changing theme) and I filled it with a lot of bloat. In this post I’m going to explain how I simplified and tuned both VSCode and nvim.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-11-11T00:00:00+00:00">
+    <meta property="article:tag" content="Nvim">
+    <meta property="article:tag" content="Vscode">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My dev setup using VSCode and nvim">
+  <meta name="twitter:description" content="Back in January I made a post on how I was learning and configuring vim and neovim. After 10 months, during which I focused on University and didn’t write code 24/7, I found myself more and more going back to VSCode. So I decided to fine-tune VSCode to my likings, and simplify nvim to use it when I need to modify some files from the terminal.
+In the last few months, I realized that in my 4 years of using VSCode I never customized it (aside changing theme) and I filled it with a lot of bloat. In this post I’m going to explain how I simplified and tuned both VSCode and nvim.">
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="http://federama.dev/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css" integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N&#43;XoIuZg==">
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="http://federama.dev/images/favicon.ico" />
+
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">./home</a></li>
+         
+        <li><a href="/about">./about_me</a></li>
+         
+        <li><a href="/posts">./blog</a></li>
+         
+        <li><a href="/tags">./tags</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" http://federama.dev/posts/2023-01-18-nvim-setup/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f" aria-label="Facebook">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&text=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Twitter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&title=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Linkedin">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&is_video=false&description=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Pinterest">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=My%20dev%20setup%20using%20VSCode%20and%20nvim&body=Check out this article: http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f" aria-label="Email">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&title=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Pocket">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&title=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="reddit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&name=My%20dev%20setup%20using%20VSCode%20and%20nvim&description=%3cp%3eBack%20in%20January%20I%20made%20a%20%3ca%20href%3d%22http%3a%2f%2ffederama.dev%2fposts%2f2023-01-18-nvim-setup%2f%22%3epost%3c%2fa%3e%20on%20how%20I%20was%20learning%20and%20configuring%20vim%20and%20neovim.%20After%2010%20months%2c%20during%20which%20I%20focused%20on%20University%20and%20didn%26rsquo%3bt%20write%20code%2024%2f7%2c%20I%20found%20myself%20more%20and%20more%20going%20back%20to%20VSCode.%20So%20I%20decided%20to%20fine-tune%20VSCode%20to%20my%20likings%2c%20and%20simplify%20nvim%20to%20use%20it%20when%20I%20need%20to%20modify%20some%20files%20from%20the%20terminal.%3c%2fp%3e%0a%3cp%3eIn%20the%20last%20few%20months%2c%20I%20realized%20that%20in%20my%204%20years%20of%20using%20VSCode%20I%20never%20customized%20it%20%28aside%20changing%20theme%29%20and%20I%20filled%20it%20with%20a%20lot%20of%20bloat.%20In%20this%20post%20I%26rsquo%3bm%20going%20to%20explain%20how%20I%20simplified%20and%20tuned%20both%20VSCode%20and%20nvim.%3c%2fp%3e" aria-label="Tumblr">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&t=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Hacker News">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        My dev setup using VSCode and nvim
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2023-11-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">2023-11-11</time>
+          
+        </div>
+        
+        
+        <div class="article-read-time">
+          <i class="far fa-clock"></i>
+          
+          2 minute read
+        </div>
+        
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/nvim" rel="tag">nvim</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/vscode" rel="tag">vscode</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+    
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-i-decided-to-move-back-to-vscode">Why I decided to move back to VSCode</a></li>
+    <li><a href="#vscode">VSCode</a></li>
+    <li><a href="#nvim">Nvim</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="content" itemprop="articleBody">
+      <p>Back in January I made a <a href="http://federama.dev/posts/2023-01-18-nvim-setup/">post</a> on how I was learning and configuring vim and neovim. After 10 months, during which I focused on University and didn&rsquo;t write code 24/7, I found myself more and more going back to VSCode. So I decided to fine-tune VSCode to my likings, and simplify nvim to use it when I need to modify some files from the terminal.</p>
+<p>In the last few months, I realized that in my 4 years of using VSCode I never customized it (aside changing theme) and I filled it with a lot of bloat. In this post I&rsquo;m going to explain how I simplified and tuned both VSCode and nvim.</p>
+<h2 id="why-i-decided-to-move-back-to-vscode">Why I decided to move back to VSCode</h2>
+<p>During these 10 months of learning vim and using nvim, I found myself constantly worrying about something wrong in my nvim setup. For example, I had issues with conflicting themes between my terminal (iTerm on macOS) and nvim, I had issues with the bufferline, I had issues with the neotree plugin, I had issues with the Option key, I couldn&rsquo;t drag and drop, and some other minor things. Since starting with nvim, I have fixed a lot of problems, changed the setup a lot of times (even a full rewrite of it), and above all, <em>lost a lot of time</em> doing it.</p>
+<p>Don&rsquo;t get me wrong, I love nvim, tmux and being able to only use the keyboard, but I have to admit that a lot of these issues are not present in VSCode, while some of the pros are there. I don&rsquo;t need the performance of the terminal on my computer, I don&rsquo;t have strong feelings against VSCode, and I found myself more and more going back to it, just for the ease of use.</p>
+<h2 id="vscode">VSCode</h2>
+<p>Starting with VSCode, I began by scrolling through extensions and keeping the only ones that I&rsquo;m actually using, knowing that I can always reinstall an extension with 30 seconds and a Wi-Fi network.</p>
+<p>Then I simplified a lot the <code>settings.json</code> file, which was full of default options and deleted extensions, and added a couple of new settings.</p>
+<p>Finally, I installed the vim plugin to be able to define and use my favourite vim keybindings, in the hope that this will ease my transition back to VSCode.</p>
+<p>The final <code>settings.json</code> file can be found <a href="https://github.com/0xfederama/dotfiles/blob/main/settings.json">here</a>.</p>
+<h2 id="nvim">Nvim</h2>
+<p>For the moment of writing, I&rsquo;m currently not modifying my nvim installation because I want to try for some time the new VSCode settings. If I will simplify it, I will go back to this post and explain how I have done it.</p>
+<p>I don&rsquo;t want to preclude anything and I want to have both VSCode and nvim up and running, if I ever need them. One thing I know for sure is that by coding in VSCode I will miss tmux the most, so we will see where all this will get me and I will come back to nvim and tmux&hellip;</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">./home</a></li>
+         
+          <li><a href="/about">./about_me</a></li>
+         
+          <li><a href="/posts">./blog</a></li>
+         
+          <li><a href="/tags">./tags</a></li>
+        
+      </ul>
+    </div>
+
+    
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&text=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&title=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&is_video=false&description=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=My%20dev%20setup%20using%20VSCode%20and%20nvim&body=Check out this article: http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&title=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&title=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&name=My%20dev%20setup%20using%20VSCode%20and%20nvim&description=%3cp%3eBack%20in%20January%20I%20made%20a%20%3ca%20href%3d%22http%3a%2f%2ffederama.dev%2fposts%2f2023-01-18-nvim-setup%2f%22%3epost%3c%2fa%3e%20on%20how%20I%20was%20learning%20and%20configuring%20vim%20and%20neovim.%20After%2010%20months%2c%20during%20which%20I%20focused%20on%20University%20and%20didn%26rsquo%3bt%20write%20code%2024%2f7%2c%20I%20found%20myself%20more%20and%20more%20going%20back%20to%20VSCode.%20So%20I%20decided%20to%20fine-tune%20VSCode%20to%20my%20likings%2c%20and%20simplify%20nvim%20to%20use%20it%20when%20I%20need%20to%20modify%20some%20files%20from%20the%20terminal.%3c%2fp%3e%0a%3cp%3eIn%20the%20last%20few%20months%2c%20I%20realized%20that%20in%20my%204%20years%20of%20using%20VSCode%20I%20never%20customized%20it%20%28aside%20changing%20theme%29%20and%20I%20filled%20it%20with%20a%20lot%20of%20bloat.%20In%20this%20post%20I%26rsquo%3bm%20going%20to%20explain%20how%20I%20simplified%20and%20tuned%20both%20VSCode%20and%20nvim.%3c%2fp%3e" aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2ffederama.dev%2fposts%2f2023-11-11-new-dev-setup%2f&t=My%20dev%20setup%20using%20VSCode%20and%20nvim" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2025  Federico Ramacciotti 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">./home</a></li>
+         
+        <li><a href="/about">./about_me</a></li>
+         
+        <li><a href="/posts">./blog</a></li>
+         
+        <li><a href="/tags">./tags</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
+
+
+
+</html>
