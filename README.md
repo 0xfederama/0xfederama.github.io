@@ -1,11 +1,25 @@
 # My portfolio
 
-This is the repo of my portfolio (available at [federama.dev](https://federama.dev) and [0xfederama.github.io](https://0xfederama.github.io)).
+Source of my personal website, live at [federama.dev](https://federama.dev) (also served at [0xfederama.github.io](https://0xfederama.github.io)).
 
-Deployed using [Hugo](https://github.com/gohugoio/hugo) and a modified [hugo-cactus](https://github.com/monkeyWzr/hugo-theme-cactus) theme.
+Built with [Hugo](https://gohugo.io) (extended edition) and the [hugo-theme-cactus](https://github.com/monkeyWzr/hugo-theme-cactus) theme, included as a git submodule. My customizations live in this repo's `layouts/` folder, which overrides the theme's files, so the submodule itself stays unmodified.
 
-## Local test
-Clone the repository with `git clone --recursive https://github.com/0xfederama/0xfederama.github.io.git` and run the server locally with `hugo server`.
+## Run locally
 
-## Deployment
-Deploy the website with `hugo `.
+```bash
+git clone --recursive https://github.com/0xfederama/0xfederama.github.io.git
+cd 0xfederama.github.io
+hugo server
+```
+
+If you cloned without `--recursive`, run `git submodule update --init` first.
+
+## Write a post
+
+```bash
+hugo new content posts/YYYY-MM-DD-my-post.md
+```
+
+## Deploy
+
+Pushing to `main` builds and deploys the site to GitHub Pages via `.github/workflows/gh-pages.yml`. No manual step needed; `public/` is build output and is not committed.

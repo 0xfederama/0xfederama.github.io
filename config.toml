@@ -1,5 +1,5 @@
-baseURL = 'http://federama.dev/'
-languageCode = 'en-us'
+baseURL = 'https://federama.dev/'
+locale = 'en-us'
 title = 'Federico Ramacciotti'
 theme = 'cactus'
 
@@ -38,7 +38,7 @@ description = """
 
   I love to learn new technologies and I believe in learning-by-doing, so I built a lot of small tools to practice with the languages; you can find them all on my [github profile](https://github.com/0xfederama).
 
-  Subscribe to my [RSS feed](/posts/index.ml) to get updates on new posts!
+  Subscribe to my [RSS feed](/posts/index.xml) to get updates on new posts!
   """
 mainSection = "posts" # your main section
 tocInline = true

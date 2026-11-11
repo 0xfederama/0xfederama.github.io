@@ -34,7 +34,7 @@ You can also revoke the app's access to your Google account at any time at [myac
 
 ## This website
 
-federama.dev does not use analytics and does not set its own cookies. Its pages load a script and stylesheet from latest.cactus.chat (a comment widget included by the site theme), so that service receives the standard request data your browser sends, such as your IP address.
+federama.dev does not use analytics, does not set cookies and does not load third-party scripts. It is hosted on GitHub Pages, which handles the standard request data your browser sends (such as your IP address) to deliver the pages.
 
 ## Contact
 
